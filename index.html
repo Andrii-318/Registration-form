@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Registration form</title>
+    <link
+      rel="stylesheet"
+      href="style/style.css" />
+  </head>
+  <body>
+    <form
+      id="formInputData"
+      action="#">
+      <h1>Registration form</h1>
+      <div class="input-wrap">
+        <label for="text1">Фамілія:</label>
+        <input
+          id="text1"
+          type="text" />
+      </div>
+      <div class="input-wrap">
+        <label for="text2">Ім'я</label>
+        <input
+          id="text2"
+          type="text" />
+      </div>
+      <div class="input-wrap">
+        <label for="text3">По батькові:</label>
+        <input
+          id="text3"
+          type="text" />
+      </div>
+      <div class="input-wrap">
+        <label for="number">Введіть код з смс (п'ятизначне число):</label>
+        <input
+          id="number"
+          type="text"
+          pattern="\d{5}"
+          title="П'ятизначне число" />
+      </div>
+      <input
+        type="submit"
+        value="Submit data" />
+      <div
+        id="outputDataText"
+        class="output-data">
+        <h2>Output data text:</h2>
+        <p id="concatenatedStrings"></p>
+        <p id="separatedNumbers"></p>
+      </div>
+    </form>
+    <script src="src/script.js"></script>
+  </body>
+</html>
